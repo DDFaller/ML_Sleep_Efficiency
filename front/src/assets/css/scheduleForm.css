@@ -1,0 +1,39 @@
+.confirmSchedule{
+  width: 100%;
+  margin-top: -10px;
+  float: right;
+  padding: 20px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  margin:auto;
+}
+
+.formField{
+  margin: 2px;
+  border-radius: 10px;
+  width: 100%;
+  height: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#addBtn[class="formField"] {
+  border-radius: 10px;
+  width: 40%;
+  height: 50px;
+  padding: 12px 0px;
+  background-color:  #4E0090;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 16px;
+  transition: 0.3s;
+  cursor: pointer;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.option-text{
+  margin-left: 20px;
+}

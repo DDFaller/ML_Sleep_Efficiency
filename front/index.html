@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="src/assets/css/options.css">
+    <link rel="stylesheet" href="src/assets/css/scheduleForm.css">
+    <link rel="stylesheet" href="src/assets/css/overlay.css">
+    <title>Projeto</title>
+</head>
+<body>
+    <section class="header">
+        <h1>ML Sleep Efficiency</h1>
+        <p>Relacionando seus hábitos a qualidade de sono</p>
+    </section>
+    <div class="dim" id="overlay" onclick="overlayOut()"></div>
+    <div class = "container">
+
+        <!-- Opções de selção e formulário de dados -->
+        <div class = "doctorContainer">
+            <!-- Formulário de dados -->
+            <form name="schedulerForm" class = "confirmSchedule" >
+                <h3>Insira seus dados:</h3>
+                <input class = "radio_btn" type="radio" id = "newGenderMale" value="1" name="newGender">
+                <label for="newGender">Male</label>
+                <input class = "radio_btn" type="radio" id = "newGenderFemale" value="0" name="newGender">
+                <label for="newGender">Female</label>
+                Age:<input class = "formField" type="text" id="newAge" placeholder=" Qual sua idade:">
+                Sleep_hours:<input class = "formField" type="text" id="newSleepDuration" placeholder=" Quantas horas dormiu:">
+                Percentage_Rem:<input class = "formField" type="text" id="newRemDuration" placeholder=" Quantas de REM:">
+                Percentage_deep:<input class = "formField" type="text" id="newDeepDuration" placeholder=" Quantas de sono profundo:">
+                Percentage_light:<input class = "formField" type="text" id="newLightDuration" placeholder=" Quantas horas de sono leve:">
+                Awakenings:<input class = "formField" type="text" id="newAwakenings" placeholder=" Quantas vezes acorda por noite:">
+                Caffeine_consumption:<input class = "formField" type="text" id="newCaffeine" placeholder=" Quantas vezes consome cafeina:">
+                Alcohol_consumption:<input class = "formField" type="text" id="newAlcohol" placeholder=" Quantas vezes consome alcool:">
+                Exercise frequency:<input class = "formField" type="text" id="newExercise" placeholder=" Frequência de exercicios:">
+                Fuma?
+                <input class = "radio_btn" type="radio" id = "newSmokerYes" value="1" name="newSmoker">
+                <label for="newSmoker">Yes</label>
+                <input class = "radio_btn" type="radio" id = "newSmokerNo" value="0" name="newSmoker">
+                <label for="newSmoker">No</label>
+                BedHour:<input class = "formField" type="text" id="newBedtime" placeholder=" Que horas foi dormir:">
+                Wakehour:<input class = "formField" type="text" id="newWaketime" placeholder=" Quero horas acordou">
+               
+                <div onclick="newItem()" class = "formField" id = "addBtn">Adicionar</div>
+            </form>
+            
+        </div>
+        <div class = "result" id ="result">
+        </div>
+
+    
+    <div class="background">
+        <footer>
+            <h2>Daniel Faller,<p>MVP Engenheria de software</p></h2>
+        </footer>
+    </div>
+
+    <script src="src/api.js"></script>
+    <script src="scripts.js"></script>
+    <script src="src/assets/js/options.js"></script>
+
+    <script src="src/assets/js/scheduleForm.js"></script>
+    <script src="src/assets/js/overlay.js"></script>
+    
+</body>
+</html>
